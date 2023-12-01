@@ -1,0 +1,111 @@
+.location-container{
+    margin: 0;
+    position: absolute;
+    margin-top: 26rem;
+    display: flex;
+    align-items: center;
+    transform: translateX(-50%);
+
+}
+
+.periscope{
+    position: absolute;
+    width: 36px;
+    left: -10%;
+    transform: translateY(12%);
+
+}
+
+.location-header{
+    font-size: 36px;
+    font-weight: 500;
+    height: 20px;
+    color: #646450;
+
+}
+
+.location-collection{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    margin-top: 28rem;
+    margin-bottom: 10rem;
+    transform: translateX(30%);
+    height: 38rem;
+}
+
+.all-card{
+    margin-top: 14rem;
+    margin-bottom: 6rem;
+}
+
+.location-card{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background-color: rgb(255, 255, 255);
+    width: 520px;
+    height: 152px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.location-card h3 {
+    margin: 0;
+    margin-top: 1.2rem;
+    margin-left: 1.5rem;
+    width: 475px;
+    color: #646450; 
+    font-size: 22px; 
+  }
+
+.line{
+    margin-top: 0.6rem;
+    margin-left: 1.5rem;
+    border-bottom: 1px solid #646450;
+    width: 470px;
+}
+
+.location-detail{
+    margin-top: 0.6rem;
+    margin-left: 1.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    width: 440px;
+    color: #646450;
+}
+
+.location-arrow{
+    margin: 0;
+    margin-left: 29.5rem;
+    transform: translateY(-12%);
+    width: 36px;
+}
+
+.location-arrow-right{
+    margin: 0;
+    margin-left: 29.5rem;
+    transform: translateY(-12%);
+    width: 36px;
+}
+
+
+.location-card:hover{
+    color:white;
+    background-color: #b0b0a94a;
+    cursor: pointer;
+}
+
+.location-card a{
+    text-decoration: none;
+}
+
+.location-arrow2{
+    margin: 0;
+    margin-left: 29.5rem;
+    transform: translateY(-50%);
+    width: 36px;
+}

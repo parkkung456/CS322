@@ -1,0 +1,86 @@
+
+.loginForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/public/background2.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    height: 90.2vh;
+    filter: brightness(0.96);
+
+}
+
+.loginFormWrapper {
+    width: 420px;
+    background-color: #fff;
+    background: transparent;
+    border: 2px solid rgba(187, 181, 181, 0.168);
+    backdrop-filter: blur(90px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px 40px;
+
+}
+
+.loginFormWrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.259);
+}
+
+.loginFormWrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.593);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(2, 2, 2);
+    padding: 20px 45px 20px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.259);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.095);
+}
+
+.input-box input::placeholder {
+    color: rgb(255, 254, 254);
+}
+
+.input-box box-icon {
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    transform: translateY(0%);
+}
+
+.loginFormWrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: white;
+    outline: none;
+    border-radius: 40px;
+    border-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.loginFormWrapper .btn:hover {
+    background-color: #eee; 
+}

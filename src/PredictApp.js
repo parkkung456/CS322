@@ -1,34 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import { UploadImage } from './components/UploadImage';
+import WebcamUpload from './components/WebcamUpload';
+import './PredictApp.css';
 
 function PredictApp() {
-  const [selectedFile, setSelectedFile] = useState(null);
-  const [prediction, setPrediction] = useState(null);
+  const [showUploadImage, setShowUploadImage] = useState(false);
+  const [showWebcamUpload, setshowWebcamUpload] = useState(false);
 
-  const handleFileChange = (event) => {
-    setSelectedFile(event.target.files[0]);
+    
+  const handleUploadButtonClickCam = () => {
+    setshowWebcamUpload(true);
+    setShowUploadImage(false);
   };
 
-  const handlePredict = () => {
-    const formData = new FormData();
-    formData.append('image', selectedFile);
-
-    fetch('http://127.0.0.1:5000/predict', {
-      method: 'POST',
-      body: formData,
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setPrediction(data.class);
-      })
-      .catch((error) => console.error('Error:', error));
+  const handleUploadButtonClick = () => {
+    setShowUploadImage(true);
+    setshowWebcamUpload(false);
   };
-
+  
   return (
-    <div>
-      <input type="file" accept="image/*" onChange={handleFileChange} />
-      <button onClick={handlePredict}>Predict</button>
-      {prediction && <p>Prediction: {prediction}</p>}
-    </div>
+      <div className="container">
+        <div className="left-container">
+            <span>Sorting is caring,</span>
+            <span>for the planet</span>
+            <span>we're repairing.</span>
+            <div className='buttonContainer'>
+              <button className="uploadButton" onClick={handleUploadButtonClick}>UPLOAD IMAGE</button>
+              <button className="captureButton" onClick={handleUploadButtonClickCam}>USE WEBCAM ➜</button>
+            </div>
+            {showUploadImage && <UploadImage />}
+            {showWebcamUpload && <WebcamUpload />}
+        </div>
+        <div className="right-container">
+          <img src='/illustratorPredict.png' alt="Right Image" />
+        </div>
+        </div>
+      
   );
 }
 

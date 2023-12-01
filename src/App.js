@@ -7,6 +7,8 @@ import React, { useState, useEffect } from "react";
 import { getUser, getToken, setUserSession, resetUserSession } from "./service/AuthService";
 import axios from "axios";
 import PredictApp from "./PredictApp"
+import { Navbar } from './components/Navbar';
+import  NavbarNotLogin  from './components/NavbarNotLogin';
 
 const verifyTokenAPIURL = 'https://hai7owh9ji.execute-api.ap-southeast-2.amazonaws.com/prod/verify';
 
@@ -51,16 +53,11 @@ function App() {
     
     <div className="App">
       <BrowserRouter>
-        <div className="header">
-          <NavLink exact activeClassName="active" to="/">Home</NavLink>
-          <NavLink activeclassname="active" to="/register">Register</NavLink>
-          <NavLink activeClassName="active" to="/login">Login</NavLink>
-          <NavLink activeClassName="active" to="/predict">Predict</NavLink>
-        </div>
+      {isLoggedIn ? <Navbar /> : <NavbarNotLogin />}
         <div className="content">
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/signup" element={<Register />} />
             <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
             <Route path="/premium-content" element={<PremiumContent />} />
             <Route path="/predict" element={<PredictApp />} />

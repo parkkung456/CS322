@@ -35,23 +35,37 @@ const Register = () => {
         if(error.response.status === 401 || error.response.status === 403){
             setMessage(error.response.data.message);
         } else {
-            setMessage('sorry .. backend server is doom try again later');
+            setMessage('sorry .. backend server is down try again later');
         }
        })
     }
 
 
     return (
-        <div>
-            <form onSubmit={submitHandler}>
-                <h5>Register</h5>
-                name: <input type="text" value={name} onChange={event => setName(event.target.value)}/> <br/>
-                email: <input type="text" value={email} onChange={event => setEmail(event.target.value)}/> <br/>
-                username: <input type="text" value={username} onChange={event => setUsername(event.target.value)}/> <br/>
-                password: <input type="password" value={password} onChange={event => setPassword(event.target.value)}/> <br/>
-                <input type="submit" value="Register" />
-            </form>
-            {message && <p className="message">{message}</p>}
+        <div className='loginForm'>
+            <div className='loginFormWrapper'>
+            <h1>Register</h1>
+            {message && <p className={`message ${message === 'Registration Successful' ? 'success' : ''}`}>{message}</p>}
+                <form className='registerForm' onSubmit={submitHandler}>
+                <div className='input-box'>
+                    <input type="text" value={name} onChange={event => setName(event.target.value)} placeholder="Name"/>
+                    <box-icon name='id-card' type='solid' color='#ffffff' ></box-icon>
+                </div>
+                <div className='input-box'>
+                    <input type="text" value={email} onChange={event => setEmail(event.target.value)} placeholder="Email"/> 
+                    <box-icon name='envelope' type='solid' color='#ffffff' ></box-icon>
+                </div>
+                <div className='input-box'>
+                    <input type="text" value={username} onChange={event => setUsername(event.target.value)} placeholder="Username"/>
+                    <box-icon name='user' type='solid' color='#ffffff' ></box-icon> 
+                </div>
+                <div className='input-box'>
+                <input type="password" value={password} onChange={event => setPassword(event.target.value)} placeholder="Password"/>
+                <box-icon name='lock-alt' type='solid' color='#ffffff' ></box-icon>
+                </div>
+                <input type="submit" value="Register" className="btn"/>
+                    </form>
+            </div>
         </div>
     )
 }

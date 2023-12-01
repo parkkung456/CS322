@@ -11,6 +11,7 @@ const PremiumContent = () => {
   const logoutHandler = () => {
     resetUserSession();
     navigate('/login');
+    window.location.reload();
   };
 
   return (

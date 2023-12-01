@@ -1,0 +1,47 @@
+.webcam-modal {
+  background-color: rgba(255, 255, 255, 0.6); /* 60% opacity white background */
+  width: 100%;
+  height: 130%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 60vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  .webcam-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-container {
+    margin-top: 10px; /* Adjust the margin as needed */
+    display: flex;
+    gap: 10px; /* Adjust the gap between buttons */
+  }
+
+  .camera{
+    margin-top: 8rem;
+  }
+
+  .predict-button2 {
+    position: absolute;
+    top: 105%;
+    transform: translateY(100%);
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    color: black;
+    background-color: #FFCD4B;
+    border: 2px solid #FFCD4B;
+    transition: background-color 0.3s ease;
+  }
+  
+  .predict-button2:hover {
+    border: 2px solid #ffb700;
+    color:#000000;
+    background-color: #ffb700;
+  }
