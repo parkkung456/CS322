@@ -1,34 +1,83 @@
-
 .loginForm {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/public/background2.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100%;
-    height: 90.2vh;
-    filter: brightness(0.96);
-
+    height: 343px;
+    margin-top: 9rem;
+    background-color: #ffffff;
 }
+
+.loginForm2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 343px;
+    margin-top: 10rem;
+    background-color: #ffffff;
+}
+
 
 .loginFormWrapper {
     width: 420px;
+    height: 510px;
     background-color: #fff;
-    background: transparent;
-    border: 2px solid rgba(187, 181, 181, 0.168);
     backdrop-filter: blur(90px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
     padding: 30px 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
 
+  .loginFormWrapper2 {
+    width: 420px;
+    height: 640px;
+    background-color: #ffffff;
+    backdrop-filter: blur(90px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+.login-header {
+    margin-top: 1rem;
+    color: #295122;
+    text-align: start;
+    font-weight: bolder;
+}
+
+.login-header-label{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
 }
 
 .loginFormWrapper h1 {
-    font-size: 36px;
+    position: absolute;
+    margin-left: 5rem;
+    top: 9%;
+    width: 50px;
+    font-size: 20px;
     text-align: center;
-    color: #ffffff;
+    color: #295122;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.259);
+}
+
+.loginFormWrapper2 h1 {
+    position: absolute;
+    margin-left: 5rem;
+    top: 9%;
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: #295122;
     font-weight: bolder;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.259);
 }
@@ -40,47 +89,212 @@
     margin: 30px 0;
 }
 
+.loginFormWrapper .input-box2 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.p-input{
+    margin-top: 14px;
+}
+
 .input-box input {
     height: 100%;
     width: 100%;
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, 0.593);
-    border-radius: 40px;
+    border: 2px solid #7B9731;
+    border-radius: 10px;
     font-size: 16px;
-    color: rgb(2, 2, 2);
+    color: #7B9731;
+    padding: 20px 45px 20px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.259);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.095);
+}
+
+.input-box2 input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #7B9731;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #7B9731;
     padding: 20px 45px 20px 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.259);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.095);
 }
 
 .input-box input::placeholder {
-    color: rgb(255, 254, 254);
+    color: rgb(8, 8, 8);
+}
+
+.input-box2 input::placeholder {
+    color: rgb(8, 8, 8);
+}
+
+.login-label{
+    position: absolute;
+    font-size: 14px;
+    top: -48%;
+    color: #295122;
+    font-weight: bold;
+}
+
+.password-label{
+    position: absolute;
+    font-size: 14px;
+    top: -20%;
+    color: #295122;
+    font-weight: bold;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
 }
 
 .input-box box-icon {
     position: absolute;
+    display: flex;
     right: 20px;
     top: 25%;
-    transform: translateY(0%);
+}
+
+.input-box2 box-icon {
+    position: absolute;
+    display: flex;
+    margin-top: 0.8rem;
+    right: 20px;
+    top: 25%;
 }
 
 .loginFormWrapper .btn {
-    width: 100%;
-    height: 45px;
-    background: white;
+    margin-left: 8rem;
+    width: 26%;
+    height: 36px;
+    background:#7B9731;
     outline: none;
     border-radius: 40px;
     border-color: transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     font-size: 16px;
-    color: #333;
+    color: #ffffff;
     font-weight: 600;
     transition: background-color 0.3s ease;
 }
 
 .loginFormWrapper .btn:hover {
-    background-color: #eee; 
+    background-color: #7c97319e; 
+    color: rgba(0, 0, 0, 0.455) ;
+}
+
+.loginFormWrapper2 .btn {
+    margin-left: 8rem;
+    width: 26%;
+    height: 36px;
+    background:#7B9731;
+    outline: none;
+    border-radius: 40px;
+    border-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.loginFormWrapper2 .btn:hover {
+    background-color: #7c97319e; 
+    color: rgba(0, 0, 0, 0.455) ;
+}
+
+
+.imageContainer{
+    width: 420px;
+    height: 510px;
+    background-color: #a2b8646c;
+    padding: 30px 40px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(60px);
+}
+
+.imageContainer img{
+    margin-top: 3rem;
+}
+
+.imageContainer2{
+    width: 420px;
+    height: 640px;
+    background-color: #a2b8646c;
+    padding: 30px 40px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(60px);
+}
+
+.imageContainer2 img{
+    margin-top: 8rem;
+}
+
+.loginFormWrapper img{
+    width: 60px; 
+    height: auto; 
+}
+
+.loginFormWrapper2 img{
+    width: 60px; 
+    height: auto; 
+}
+
+.border{
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0px 10px 8px #7c9731a8;
+}
+
+.border2{
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0px 10px 8px #7c9731a8;
+}
+
+.loginFormWrapper li{
+    list-style: none;
+    color: #757575d6;
+}
+
+.loginFormWrapper2 li{
+    list-style: none;
+    color: #757575d6;
+}
+
+.to-signup{
+    margin: 1rem;
+    margin-left: 4rem;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    color: #757575;
+}
+
+.register-name{
+    position: absolute;
+    font-size: 14px;
+    top: -48%;
+    color: #295122;
+    font-weight: bold;
 }

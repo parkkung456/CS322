@@ -35,7 +35,7 @@ export const Navbar = () => {
                 <NavLink to='/'>Home</NavLink>
             </li>
             <li>
-                <NavLink to='/premium-content'>Articles</NavLink>
+                <NavLink to='/articles'>Articles</NavLink>
             </li>
             <li>
                 <NavLink to='/predict'>Predict</NavLink>

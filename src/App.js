@@ -3,6 +3,7 @@ import Home from "./Home";
 import Register from "./Register";
 import Login from "./Login";
 import PremiumContent from "./PremiumContent";
+import Articles from "./Article"
 import React, { useState, useEffect } from "react";
 import { getUser, getToken, setUserSession, resetUserSession } from "./service/AuthService";
 import axios from "axios";
@@ -61,6 +62,7 @@ function App() {
             <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
             <Route path="/premium-content" element={<PremiumContent />} />
             <Route path="/predict" element={<PredictApp />} />
+            <Route path="/articles" element={<Articles />} />
         </Routes>
         </div>
       </BrowserRouter>

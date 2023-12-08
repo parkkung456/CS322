@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 import axios from 'axios';
 import { setUserSession } from './service/AuthService';
 import './Login.css'
 import 'boxicons'
+
+import loginP from "./assets/loginPic.svg"
 
 const loginAPIUrl = 'https://hai7owh9ji.execute-api.ap-southeast-2.amazonaws.com/prod/login';
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -52,26 +54,35 @@ const Login = () => {
 
   return (
     <div className='loginForm'>
-      <div className='loginFormWrapper'>
-      <h1>Login</h1>
-
-      {errorMessage && <p className="message">{errorMessage}</p>}
-      
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className='input-box'>
-          <input type="text" {...register('username')} placeholder="Username" />
-          <box-icon name='user' type='solid' color='#ffffff' ></box-icon>
-          </div>
-          <div className='input-box'>
-          <input type="password" {...register('password')} placeholder="Password"/>
-          <box-icon name='lock-alt' type='solid' color='#ffffff' ></box-icon>
-          </div>
-          <input type="submit" value="Login" className='btn'/>
-        </form>
-        
+      <div className='border'>
+        <div className='loginFormWrapper'>
+        <img src="/Logo.png" className="logo-image2" />
+          <h1>EcoSort</h1>
+          <p className='login-header'>EcoSort, Waste Sorting Ai for Good Society</p>
+          <p className='login-header-label'>Welcome Back, Please login to your account</p>
+            {errorMessage && <p className="message">{errorMessage}</p>}
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div className='input-box'>
+              <p className='login-label'>Username</p>
+              <input type="text" {...register('username')}/>
+              <box-icon name='user'  type='regular' color='#464639' ></box-icon>
+            </div>
+            <div className='input-box2'>
+              <p className='password-label'>Password</p>
+              <input className='p-input' type="password" {...register('password')}/>
+              <box-icon name='lock-alt' type='regular' color='#464639' ></box-icon>
+            </div>
+              <input type="submit" value="Login" className='btn'/>
+              <p className='to-signup'>Don't have an account? <li><NavLink to='/signup'>sign up</NavLink></li></p>
+          </form>
+        </div>
+        <div className='imageContainer'>
+        <img src={loginP}/>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Login;
+//    background: url('/public/background2.jpg') no-repeat;

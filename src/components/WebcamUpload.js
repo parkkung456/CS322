@@ -111,8 +111,8 @@ function WebcamUpload() {
         </div>
       </Modal>
 
-      <div className='upload-image-container'>
-        <div className='image-holder'>
+      <div className='upload-image-container2'>
+        <div className='image-holder2'>
           {capturedImage ? (
             <img src={capturedImage} alt="Captured" style={{ borderRadius: '10px', width: '365px', height: '250px' }} />
           ) : (

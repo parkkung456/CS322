@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 780px;
+    width: 100%;
+    background: #fff;
+    border: 0px solid #fff;
+    border-radius: 15px 15px 15px 15px;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0px 55px 70px -30px #7B9731;
+}
+
+.form-popup .form-box {
+    display: flex;
+    width: 100%;
+}
+
+.form-popup .form-right {
+    display: flex;
+    width: 100%;
+    background: #7B9731;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.form-right img {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    transform: translate(0%, 20%);
+}
+
+.form-content #logo-name {
+    font-size: 25px;
+    font-weight: bold;
+    color: #295122;
+}
+
+.form-box h1 {
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    color: #295122;
+}
+
+.form-box #login-text {
+    font-size: 100%;
+    margin-bottom: 100px;
+    color: #295122;
+}
+
+.form-box .form-content {
+    width: 100%;
+    padding: 35px;
+}
+
+form .input-field {
+    height: 50px;
+    width: 100%;
+    margin-top: 35px;
+    position: relative;
+    display: flex;
+}
+
+form .input-field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 0.95rem;
+    border-radius: 8px ;
+    border: 1px solid #7B9731;
+    color: #295122;
+}
+
+form .input-field label {
+    position: absolute;
+    bottom: 110%;
+    font-weight: bold;
+    color: #295122;
+    pointer-events: none;
+}
+
+.form-box a {
+    color: #9a9a7b;
+    text-decoration: none;
+}
+
+.form-box a:hover {
+    text-decoration: underline;
+}
+
+form button {
+    width: 50%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 14px ;
+    border-radius: 30px;
+    border: 1px solid #7B9731;
+    margin: 25px 0;
+    color: #7B9731;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.2s ease;
+    transform: translateX(50%);
+}
+
+form button:hover {
+    color: #fff;
+    background: #7B9731;
+    transition: 0.3s;
+}
+
+.form-box .to-signInUp #signInUp-text {
+    color: #646450;
+}
+
+.form-box .to-signInUp {
+    transform: translateY(-60%);
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    .form-popup {
+        width: 95%;
+    }
+
+    .form-box .form-right {
+        display: none;
+    }
+
+    .form-box .form-content {
+        padding: 30px 20px;
+    }
+}

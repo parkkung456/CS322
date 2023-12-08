@@ -1,0 +1,175 @@
+main.landing{
+    display: flex;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.content-left{
+    max-width: 43%;
+}
+
+main h1{
+    font-size: 35px;
+    color: #646450;
+    font-weight: 600;
+}
+
+
+main h2{
+    font-size: 22px;
+    color: #646450;
+    font-weight: 400;
+}
+
+main h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+div.try-btn{
+    padding-top: 20px;
+}
+
+a.try-btn{
+    width: 181px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #646450;
+    text-decoration: none;
+    border: 1px solid #646450;
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+a.try-btn:hover{
+    color: #FFFFFF;
+    background-color: #646450;
+    transition: 0.7s;
+}
+
+main.about{
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    text-align: center;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 21rem));
+    justify-content: center;
+}
+
+.wrapper img {
+    max-width: 200px;
+
+}
+
+.card{
+    color: #646450;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    width: 30%;
+}
+
+.card-text{
+    padding-top: 20px;
+}
+
+.card h3{
+    padding-left: 35px;
+    padding-right: 35px;
+    color: #757575;
+}
+
+main.about h1{
+    word-spacing: 10px;
+    text-align: center;
+}
+
+.color-code{
+    padding-top: 70px;
+    padding-bottom: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.articles h1{
+    text-align: center;
+}
+
+.articles{
+    padding-top: 20px;
+}
+
+.article-wrapper{
+    
+    padding-top: 40px;
+    padding-bottom: 85px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 18rem));
+    justify-content: center;
+    gap: 30px;
+}
+
+.article-card:hover {
+    box-shadow: 0 2px 16px rgba(33,33,33,.2); 
+  }
+
+.article-card{
+    transition: box-shadow .3s;
+    padding: 10px;
+    padding-bottom: 25px;
+    color: #646450;
+    border-style: solid;
+    border-radius: 18px;
+    border-color: lightgray;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.article-wrapper h2{
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.read-btn{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    padding-top: 10px;
+    padding-left: 10px;
+    gap: 10px;
+    text-decoration: none;
+    width: 90%;
+}
+
+a.read-btn{
+   text-align: center; 
+   justify-content: center;
+   border: 1px solid #646450;
+   color: #FFFFFF;
+   background-color: #646450;
+   border-radius: 25px;
+   padding: 10px;
+}

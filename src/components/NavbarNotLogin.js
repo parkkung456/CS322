@@ -16,9 +16,6 @@ export const NavbarNotLogin = () => {
                 <NavLink to='/'>Home</NavLink>
             </li>
             <li>
-                <NavLink to='/premium-content'>Articles</NavLink>
-            </li>
-            <li>
                 <NavLink to='/login' className='loginBtn' activeclassName='active'>Login</NavLink>
             </li>
             <li>

@@ -3,6 +3,7 @@ import { UploadImage } from './components/UploadImage';
 import WebcamUpload from './components/WebcamUpload';
 import './PredictApp.css';
 
+
 function PredictApp() {
   const [showUploadImage, setShowUploadImage] = useState(false);
   const [showWebcamUpload, setshowWebcamUpload] = useState(false);
@@ -19,7 +20,7 @@ function PredictApp() {
   };
   
   return (
-      <div className="container">
+      <div className="container2">
         <div className="left-container">
             <span>Sorting is caring,</span>
             <span>for the planet</span>
@@ -32,7 +33,7 @@ function PredictApp() {
             {showWebcamUpload && <WebcamUpload />}
         </div>
         <div className="right-container">
-          <img src='/illustratorPredict.png' alt="Right Image" />
+          <img src='/predict2.svg' alt="Right Image" height={600}/>
         </div>
         </div>
       

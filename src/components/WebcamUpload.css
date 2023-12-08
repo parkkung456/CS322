@@ -27,10 +27,30 @@
     margin-top: 8rem;
   }
 
+  .image-holder2 {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: -4rem;
+    margin-left: 6rem;
+    box-shadow: 0 2px solid #000000;
+  }
+  
+  .upload-image-container2{
+      padding: 2rem 2.5rem;
+      margin-left: 2.5rem;
+      margin-top: 10rem;
+      margin-bottom: 20rem;
+      display: flex;
+      align-items: center;
+  }
+
   .predict-button2 {
     position: absolute;
     top: 105%;
     transform: translateY(100%);
+    margin-top: 14rem;
     width: 160px;
     height: 50px;
     border-radius: 30px;
