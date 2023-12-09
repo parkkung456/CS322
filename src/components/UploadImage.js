@@ -75,7 +75,7 @@ export const UploadImage = () => {
   
 
   return (
-    <div className='upload-image-container2'>
+    <div className='upload-image-container'>
       <div className='image-holder'>
           <img className='image-preview' src={imagePreview} alt='Selected'  />
           <input type='file' accept='image/*' onChange={handleFileChange} />

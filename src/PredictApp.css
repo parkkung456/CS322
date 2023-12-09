@@ -6,7 +6,7 @@
   .left-container {
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
+    margin-left: 7rem;
     height: 300px;
     margin-top: -5rem;
   }

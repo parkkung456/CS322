@@ -25,7 +25,7 @@
 
 .loginFormWrapper {
     width: 420px;
-    height: 510px;
+    height: 460px;
     background-color: #fff;
     backdrop-filter: blur(90px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -36,7 +36,7 @@
 
   .loginFormWrapper2 {
     width: 420px;
-    height: 640px;
+    height: 590px;
     background-color: #ffffff;
     backdrop-filter: blur(90px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -221,7 +221,7 @@
 
 .imageContainer{
     width: 420px;
-    height: 510px;
+    height: 460px;
     background-color: #a2b8646c;
     padding: 30px 40px;
     border-top-right-radius: 15px;
@@ -236,7 +236,7 @@
 
 .imageContainer2{
     width: 420px;
-    height: 640px;
+    height: 590px;
     background-color: #a2b8646c;
     padding: 30px 40px;
     border-top-right-radius: 15px;

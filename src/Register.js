@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from 'axios';
 import { useNavigate, NavLink } from 'react-router-dom';
 import './Login.css'
-import loginP from "./assets/loginPic.svg"
+import signup from "./assets/signupPic.svg"
 const registerUrl = 'https://hai7owh9ji.execute-api.ap-southeast-2.amazonaws.com/prod/register'
 
 const Register = () => {
@@ -47,8 +47,7 @@ const Register = () => {
         <div className='loginForm2'>
             <div className='border2'>
             <div className='loginFormWrapper2'>
-                <img src="/Logo.png" className="logo-image2" />
-                <h1>EcoSort</h1>
+                
                 <p className='login-header'>Welcome to EcoSort!</p>
                 <p className='login-header-label'>Enter your information to use our Waste Sorting AI</p>
             {message && <p className={`message ${message === 'Registration Successful' ? 'success' : ''}`}>{message}</p>}
@@ -78,7 +77,7 @@ const Register = () => {
                     </form>
             </div>
             <div className='imageContainer2'>
-                <img src={loginP}/>
+                <img src={signup}/>
             </div>
             </div>
         </div>

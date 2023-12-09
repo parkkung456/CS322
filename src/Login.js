@@ -56,8 +56,7 @@ const Login = () => {
     <div className='loginForm'>
       <div className='border'>
         <div className='loginFormWrapper'>
-        <img src="/Logo.png" className="logo-image2" />
-          <h1>EcoSort</h1>
+        
           <p className='login-header'>EcoSort, Waste Sorting Ai for Good Society</p>
           <p className='login-header-label'>Welcome Back, Please login to your account</p>
             {errorMessage && <p className="message">{errorMessage}</p>}
